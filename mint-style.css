@@ -1,0 +1,449 @@
+body{
+	background-color: rgb(236, 238, 241);
+	font-family: AvenirNext,Avenir,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+html, body {
+	margin: 0;
+	font-size: 10px;
+}
+
+header{
+	display: flex;
+	height: 40px;
+	align-items: center;
+	padding: 8px 30px;
+	padding-bottom: 5px;
+}
+
+#account{
+	margin-left:auto;
+	font-size: 1.2rem;
+	text-align: right;
+}
+
+#account-already{
+	margin-bottom: 5px;
+	color: #505050;
+}
+
+#account-forgot a{
+	text-decoration:none;
+	color: #0077c5;
+}
+
+#account-sign-in{
+	
+	margin-left: 10px; 
+}
+
+#account-sign-in button{
+	background: #0077c5;
+	border-radius: 4px;
+	border: 1px solid #4c4c4c;
+	color:white;
+	cursor: pointer;
+	font-size: 1.4em;
+	padding: 0 20px;
+	height: 34px;
+}
+
+.sign-in-lock{
+  height: 1em;
+  width: 0.8em;
+  margin-top: 2px;
+  margin-right: 4px;
+  vertical-align: text-top;
+  display: inline-block;
+  background-image: url(https://plugin.intuitcdn.net/identity-authn-core-ui/images/icon-whitelock@3x-76f33cec.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+
+main{
+	/*background-color: red;*/
+	width: 380px;
+	margin: 0 auto;
+	padding: 30px;
+}
+
+/* logo section*/
+
+#logo-section{
+	width:380px;
+	height:100px;
+	
+}
+
+#intuit-logo{
+	width: 118px;
+	height: 35px;
+	background-image: url(https://plugin.intuitcdn.net/identity-authn-core-ui/images/ecosystem_logos_new-a1ca21cc.png);
+	margin: 0 auto;
+
+}
+
+/*sub logo section*/
+
+#group-logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 20px 0;	
+}
+
+#group-logo li {
+  display: flex;
+}
+
+#group-logo li * {
+  height: 24px;
+}
+
+#group-logo i {
+  position: absolute;
+  visibility: hidden;
+  animation: translate ease-out 600ms 1s forwards;
+}
+
+.logo-ico {
+  width: 24px;
+}
+
+.logo-text {
+  margin: 0 10px 0 3px;
+}
+
+i.mint-logo {
+  position: initial;
+  visibility: initial;
+  background: url(https://plugin.intuitcdn.net/identity-authn-core-ui/images/mint-favicon-4accf8f4.svg)
+    no-repeat;
+  animation: pulse 500ms 2 alternate, translate ease-out 600ms 1s forwards;
+}
+
+.mint-text-logo {
+  width: 40px;
+  background: url(https://plugin.intuitcdn.net/identity-authn-core-ui/images/mint-text-0fa36974.svg)
+    no-repeat;
+  background-position: center;
+}
+
+.quickbooks-logo {
+  background: url(https://plugin.intuitcdn.net/identity-authn-core-ui/images/quickbooks-favicon@2x-c89488e8.svg)
+    no-repeat;
+}
+
+.quickbooks-text-logo {
+  width: 100px;
+  background: url(https://plugin.intuitcdn.net/identity-authn-core-ui/images/quick-books-text-db6c72bf.svg)
+    no-repeat;
+  background-position: center;
+}
+
+.turbotax-logo {
+  background: url(https://plugin.intuitcdn.net/identity-authn-core-ui/images/tt-favicon@2x-fbd64ab8.svg)
+    no-repeat;
+}
+
+.turbotax-text-logo {
+  width: 75px;
+  background: url(https://plugin.intuitcdn.net/identity-authn-core-ui/images/turbo-tax-text-9bc025c5.svg)
+    no-repeat;
+  background-position: center;
+}
+
+
+@keyframes pulse {
+  100% {
+    transform: scale(2);
+  }
+}
+
+@keyframes translate {
+  0% {
+    position: initial;
+    visibility: initial;
+    opacity: 0;
+    transform: translateX(40px);
+  }
+
+  100% {
+    position: initial;
+    visibility: initial;
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+/*form section*/
+#form-title{
+	color: #4c4c4c;
+	font-weight: 400;
+	line-height: 1.1;
+	font-size: 2.4rem;
+	text-align: center;
+}
+
+#form-info{
+	color: #4c4c4c;
+	font-size: 1.4rem;
+	font-weight: 300;
+	line-height: 1.2;
+	text-align: center;
+	width:318px;
+	padding-top:20px;
+	height:32px;
+}
+
+#form-info a{
+  color: #0077c5;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+}
+
+#form-header{
+		padding-bottom:20px;
+}
+
+form{
+	background-color: #fff;
+	border: 1px solid #c7c7c7;
+	width: 318px;
+	height:582px;
+	padding: 30px;
+
+
+}
+
+label{
+  width: 320px;
+	height:25px;
+	padding-bottom: 6px;
+	font-weight: 400;
+	color: #404040;
+	font-size: 14px;
+	line-height: 25px;
+}
+
+input[type=text] {
+  width: 320px;
+	min-width: 160px;
+	height:34px;
+	position: relative;
+	font-size: 14px;
+	font-weight: 400;
+	text-align: left;
+	border: 1px solid #c1c5c8;
+	border-radius: 3px;
+	padding-left: 8px;
+  padding-right: 6px;
+}
+
+#create-account button{
+	border-radius: 4px;
+	font-size: 15.75px;
+	width: 100%;
+  height: 44px;
+	text-shadow: none;
+	font-weight: 400;
+	color: #fff;
+	background: #0077c5;
+	border: #0077c5;
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,.75);
+	min-width: 100px;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+#create-account{
+	padding-bottom: 30px;
+}
+
+#error-email{
+	width:320px;
+	height:20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	line-height: 1.2em;
+    font-size: 12px;
+		color: #eb3432;
+		word-wrap: break-word;
+		display: block;
+    min-height: 20px;
+		font-weight: 400;
+		text-align: left;
+}
+
+#standard-call{
+	width:320px;
+	height:15px;
+	padding: 5px 0;
+	color: #444;
+	display: block;
+	min-height: 20px;
+	text-align: left;
+}
+
+#phone-tab{
+	padding-bottom:25px;
+}
+
+#password-input{
+	position: relative;
+}
+
+#status-password{
+	background: url(https://plugin.intuitcdn.net/identity-authn-core-ui/images/lock-left-grey@3x-a1ab5bd1.png) no-repeat 0 50%/21px 21px;;
+	width: 33px;
+	position: absolute;
+	right: 1px;
+	height: 32px;
+	top: 1px;
+	bottom: 1px;
+	font-size: 14px;
+	font-weight: 400;
+	text-align: left;
+}
+
+#error-password{
+	width:320px;
+	height:20px;
+	margin-top: 5px;
+  margin-bottom: 5px;
+	line-height: 1.2em;
+    font-size: 12px;
+		word-wrap: break-word;
+		color: #eb3432;
+		display: block;
+    min-height: 20px;
+		font-weight: 400;
+		text-align: left;
+}
+
+#terms{
+	width:318px;
+	height:63px;
+	text-align: center;
+	font-size: 14px;
+  font-weight: 400;
+}
+
+#terms-text{
+	font-size: 12px;
+    font-style: italic;
+    color: #757575;
+		text-align: center;
+		line-height: 1.5;
+}
+
+#terms-text a{
+	color: #0077c5;
+	text-decoration: none;
+	font-size: 12px;
+  font-style: italic;
+}
+
+
+#captcha{
+	width:346px;
+	height:21px;	
+	background-color: #eceef1;
+	margin: 32px -30px -30px;
+	padding: 16px;
+	text-align: center;
+	font-size: 14px;
+  font-weight: 400;
+	line-height: 1.5;
+	font-size: 10px;
+	color: #8d9096;
+}
+
+#captcha a{
+	color: #0077c5;
+	font-size: 10px;
+	text-decoration: none;
+}
+
+/*footer*/
+footer{
+	height: 59px;
+	color: #505050;
+	width: 90%;
+	margin: 0 auto;
+	font-weight: 400;
+	font-size: 12px;
+	text-align: center;
+	padding-bottom:20px;
+	
+}
+
+#footer-links-list{
+	list-style-type: none;
+	line-height: 1.5;
+	height: 20px;
+	margin:0px;
+	
+}
+
+
+#footer-links-list li{
+	display: inline;
+	padding-left: 10px;
+}
+
+#footer-links-list li:first-child {
+	padding-left: 0px;
+}
+
+#footer-links-list li a{
+	text-decoration: none;
+	color: #505050;
+}
+
+#footer-links-list li a:hover,
+#footer-links-list li a:focus{
+	text-decoration: underline;
+}
+
+#footer-text{
+	line-height: 1.5;
+}
+
+aside {
+  position: fixed;
+  right: 5%;
+  bottom: 0;
+}
+
+aside button {
+  height: 41px;
+  width: 124.375px;
+  font-size: 1.4rem;
+  border: 0;
+  border-radius: 3px;
+  background-color: rgb(107, 108, 114);
+  color: #fff;
+	cursor: pointer;
+	line-height: 1.5;
+}
